@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/index.php": {
+            "runtime": "@vercel/php"
+        }
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "api/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "DATABASE_URL": "mysql://username:password@host:port/database",
+        "APP_KEY": "base64:your_generated_key",
+        "LOG_CHANNEL": "stderr",
+        "CACHE_DRIVER": "database",
+        "SESSION_DRIVER": "database"
+    }
+}
