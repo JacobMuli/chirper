@@ -14,5 +14,8 @@ export default defineConfig({
         host: "0.0.0.0",
         port: 10000,
         allowedHosts: ["chirper-lsd5.onrender.com"],
+        headers: {
+            Accept: "text/html",
+        },
     },
 });
